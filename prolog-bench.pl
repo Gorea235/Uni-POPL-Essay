@@ -58,9 +58,9 @@ bench(N,M):-
     gen_list(N,L),
     writeln("---===--- benchmarking immutable ---===---"),
     time(do_sum_im(L,N1)),
+    writeln("---===--- benchmarking mutable recursion ---===---"),
+    time(do_sum_m_r(L,N2)),
     ( M ->
-        writeln("---===--- benchmarking mutable recursion ---===---"),
-        time(do_sum_m_r(L,N2)),
         writeln("---===--- benchmarking mutable backtracking ---===---"),
         time(do_sum_m_b(L,N3))
       ; true
