@@ -1,0 +1,21 @@
+#! /bin/sh
+
+SEP="===================="
+RACKET_PATH="/Applications/Racket v6.12/bin/racket"
+
+echo "Benchmarking programs..."
+echo $SEP "SWI-Prolog" $SEP
+swipl "prolog-bench.pl"
+echo
+echo
+echo $SEP "Scheme" $SEP
+"$RACKET_PATH" -f scheme-bench.rkt
+echo
+echo
+echo $SEP "Python 2" $SEP
+python2 python-bench.py
+echo
+echo
+echo $SEP "C" $SEP
+(cd C && make && bin/benchmark)
+echo "Benchmarking complete"
