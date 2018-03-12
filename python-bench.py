@@ -22,10 +22,9 @@ class Span:
     the Span object itself (the list doesn't actually change, just the referencing of
     it does).
 
-    Inspired by C#'s Span<T>, written by Luke. For the moment, I'm only implementing what I
-    need for the algorithm at the moment. It uses a 'slice' object internally to keep in
-    line with Python's current systems. (I will be putting up a more complete version of this
-    class up at https://github.com/Gorea235/python-span since it's useful)
+    Inspired by C#'s Span<T>, written by Luke. This is the original, simple, implementation
+    I wrote for this project. A complete implementation (written by me separately) is up
+    at https://github.com/Gorea235/Spanning.
 
     Params:
         over: the list-like object to span over (can be another Span object).
