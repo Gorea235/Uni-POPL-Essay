@@ -1,5 +1,5 @@
 # Uni Y2 POPL Benchmarking Project
-This repository contains the project used to benchmark the various functions used for the essay for my year 2 POPL module. It has the Prolog ([prolog-bench.pl](prolog-bench.pl)), Scheme ([scheme-bench.rkt](scheme-bench.rkt)), and Python ([python-bench.py](python-bench.py)) benchmarking files. It also has optional C ([C/](C)) benchmarks, which were written to see the fastest possible execution time of the function (as C is a fast, low-level language).
+This repository contains the project used to benchmark the various functions used for the essay for my year 2 POPL module. It has the Prolog ([prolog-bench.pl](prolog-bench.pl)), Scheme ([scheme-bench.rkt](scheme-bench.rkt)), and Python ([python-bench.py](python-bench.py)) benchmarking files. It also has optional C ([C/](C)) benchmarks, which were written to see the fastest possible execution time of the function (as C is a fast, low-level language). The C benchmarking was sourced from my [previous benchmarking repo](https://github.com/Gorea235/benchmarking).
 
 The function we had to implement was one that summed up all the elements in a list of integers. We had to implement mutable and immutable versions of this in each language.
 
